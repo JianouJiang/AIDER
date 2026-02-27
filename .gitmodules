@@ -1,0 +1,9 @@
+[submodule "ai-driven-energy-research.github.io"]
+	path = ai-driven-energy-research.github.io
+	url = https://github.com/ai-driven-energy-research/ai-driven-energy-research.github.io.git
+[submodule "paper-template"]
+	path = paper-template
+	url = https://github.com/ai-driven-energy-research/paper-template.git
+[submodule "submissions"]
+	path = submissions
+	url = https://github.com/ai-driven-energy-research/submissions.git
