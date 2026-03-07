@@ -30,17 +30,16 @@ An open-access, open-source academic journal at the intersection of AI and energ
 
 ---
 
-### Phase 2: Set Up the GitHub Organisation ← YOU ARE HERE
+### Phase 2: Set Up the GitHub Organisation (DONE)
 
 This is the backbone of AIDER. The journal effectively lives on GitHub.
 
 #### 2.1 Create the GitHub Org
-- [ ] Go to https://github.com/organizations/plan and create a **free** organisation
-- Suggested name: `aider-journal` or `ai-driven-energy-research`
-- Add a profile README explaining what AIDER is
+- [x] Created: https://github.com/ai-driven-energy-research
+- Organisation name: `ai-driven-energy-research`
 
 #### 2.2 Create the Journal Website Repo
-- [ ] Create repo: `aider-journal/aider-journal.github.io`
+- [x] Created: https://ai-driven-energy-research.github.io/
 - Use GitHub Pages (free) with a static site generator (Hugo or Jekyll)
 - Pages needed:
   - **Home** — what is AIDER, the manifesto
@@ -79,12 +78,12 @@ This is the backbone of AIDER. The journal effectively lives on GitHub.
 
 #### 2.4 Define the Submission Workflow (All on GitHub, Zero Cost)
 - **To submit:** Author forks `paper-template`, fills it in, then opens an Issue on `aider-journal/submissions` with a link to their repo
-- **Review:** Editor assigns 2 reviewers. Review happens as GitHub Issues / PR comments on the author's repo — fully public
-- **Two-track review:**
-  - **Track A: Scientific merit** — is the research sound, novel, and well-presented?
-  - **Track B: Reproducibility** — can a reviewer clone the repo, run `reproduce.sh`, and get the claimed results? (Hard gate — if code doesn't run, paper is not accepted)
-- **Acceptance:** Accepted paper repo is forked into the `aider-journal` org. Listed on the website.
-- **AI-assisted review is allowed** — reviewers may use AI tools but must disclose how
+- **Automated AI review pipeline:** Three stages run automatically on every submission:
+  1. **Reproducibility Check** — CI verifies repo structure, installs dependencies, runs `reproduce.sh`
+  2. **AI Pre-Screening** — summarises paper, checks completeness, flags attention points
+  3. **AI Deep Review** — audits bold claims ("first", "novel", etc.), checks reference accessibility, flags paywalled sources
+- **Editorial decision:** An editor reviews the AI reports and makes the final call. Additional human reviewers may be invited at the editor's discretion
+- **Acceptance:** Accepted paper repo is forked into the org. Listed on the website with a Zenodo DOI
 
 ---
 
@@ -132,15 +131,18 @@ You need 5-10 people to give this credibility. Target:
 
 ---
 
-### Phase 5: Bootstrap with Your Own Papers
+### Phase 5: Bootstrap with Your Own Papers ← IN PROGRESS
 
-- [ ] Publish your paper-factory outputs as the founding articles of AIDER
-  - `demand_forecasting` — ML demand forecasting
-  - `draft_tube_cavitation` — CFD draft tube
-  - `fowt_hydro_coupled` — Floating wind turbine
-- [ ] For each, create the full submission package: paper + code + data + process-log (your paper-factory logs are the process log)
-- [ ] Run them through the review process with your editorial board — this tests the whole system
-- These founding papers demonstrate what AIDER submissions look like in practice
+3 papers in production via paper-factory (autonomous agent loop running):
+- [ ] `dam_safety_ai` — Physics-Informed AI for Dam Safety Monitoring
+  - Repo: https://github.com/JianouJiang/dam-safety-ai-monitoring
+- [ ] `clean_energy_ai_foundation` — Foundation Models for Clean Energy Systems (review + computational)
+  - Repo: https://github.com/JianouJiang/foundation-models-clean-energy
+- [ ] `desert_solar_sand_transport` — CFD-Aeolian Modeling of Wind-Sand Transport in Desert PV Mega-Bases
+  - Repo: https://github.com/JianouJiang/desert-pv-sand-transport
+- [ ] For each, create the full submission package: paper + code + data + process-log
+- [ ] Run them through the review process with editorial board
+- Note: These are submitted as an ordinary author (JianouJiang/), NOT under the AIDER org
 
 ---
 
@@ -150,10 +152,20 @@ You need 5-10 people to give this credibility. Target:
 - **Google Scholar** — automatic if papers have proper HTML meta tags (citation_title, citation_author, citation_pdf_url). GitHub Pages can do this.
 - **Semantic Scholar** — automatic crawling of well-structured academic pages
 
-#### 6.2 ISSN Registration (Free)
-- [ ] Apply for an ISSN (International Standard Serial Number) at https://www.issn.org/
-- Free to obtain, gives the journal a formal identity
-- Your British co-founder can be the applicant if needed
+#### 6.2 ISSN Registration (Free) ← IN PROGRESS
+- [x] Contacted ISSN UK Centre at the British Library (2026-03)
+- [x] Received application form from Vicci Daniels, ISSN UK Centre
+- [x] Completed and submitted application form (2026-03-05)
+  - Title: AI-Driven Energy Research
+  - Format: Online only
+  - Frequency: Continuous (rolling publication)
+  - URL: https://ai-driven-energy-research.github.io/
+  - Publisher address: Dept of Engineering Science, University of Oxford
+  - Contact: Jianou Jiang, jianou.jiang@eng.ox.ac.uk, +44 7761 956720
+  - Requested by: 2026/06/01
+  - First issue: Vol. 1, No. 1 (2026/06)
+- [ ] Awaiting ISSN assignment (allow ~30 days)
+- Filed application: `Re_ ISSN request for new online-only journal/ISSN_Application_FILLED.docx`
 
 #### 6.3 Zenodo Integration (Free)
 - [ ] Each paper's GitHub repo gets archived on Zenodo (automatic via GitHub-Zenodo integration)
