@@ -105,7 +105,7 @@ This is the backbone of AIDER. The journal effectively lives on GitHub.
 - [ ] Recruit founding papers from editorial board members (Raul, Feng Wei, Yadong Han, etc.)
 - [ ] Write additional short papers (e.g., methods paper on the AI review pipeline, reproducibility benchmark)
 
-**ISSN requirement:** Minimum 5 articles per issue. Must publish Vol. 1, No. 1 with 5+ papers before contacting ISSN again in June.
+**ISSN requirement:** Minimum 5 articles per issue — **met** (five papers live, Vol. 1). **ISSN 2979-8639 (Online) assigned 2026-06.**
 
 ---
 
@@ -115,7 +115,7 @@ This is the backbone of AIDER. The journal effectively lives on GitHub.
 - **Google Scholar** — automatic if papers have proper HTML meta tags (citation_title, citation_author, citation_pdf_url). GitHub Pages can do this.
 - **Semantic Scholar** — automatic crawling of well-structured academic pages
 
-#### 6.2 ISSN Registration (Free) ← WAITING — RECONTACT JUNE 2026
+#### 6.2 ISSN Registration (Free) ← ✅ DONE — **ISSN 2979-8639** assigned (2026-06, Vicci Daniels, ISSN UK Centre)
 - [x] Contacted ISSN UK Centre at the British Library (2026-03)
 - [x] Received application form from Vicci Daniels, ISSN UK Centre
 - [x] Completed and submitted application form (2026-03-05)
@@ -131,8 +131,9 @@ This is the backbone of AIDER. The journal effectively lives on GitHub.
 - **Requirements from ISSN UK Centre:**
   - Minimum 5 articles per issue
   - Clear publisher statement on website (name + location) — **DONE** (added 2026-03-12)
-- [ ] Publish Vol. 1, No. 1 with 5+ articles (by June 2026)
-- [ ] Contact Vicci Daniels again after first issue is live
+- [x] Publish Vol. 1, No. 1 with 5+ articles (June 2026 — five papers live)
+- [x] Contact Vicci Daniels again after first issue is live
+- [x] **ISSN assigned: 2979-8639 (Online)** — displayed on the website (header + footer, all pages, per ISSN UK Centre instructions); print it on all issues and promotional material
 - Filed application: `Re_ ISSN request for new online-only journal/ISSN_Application_FILLED.docx`
 
 #### 6.3 Zenodo Integration (Free)
@@ -167,6 +168,7 @@ This is the backbone of AIDER. The journal effectively lives on GitHub.
 | 2026-02/03 | Write manifesto, guidelines, ethics | **DONE** |
 | 2026-02/03 | Recruit editorial board (7 founding editors) | **DONE** |
 | 2026-03 | Submit ISSN application | **DONE** — held on file, recontact June |
+| 2026-06 | ISSN assigned | **DONE** — ISSN 2979-8639 (Online) |
 | 2026-03 | Publish first paper (foundation models) | **DONE** |
 | 2026-03 | Add publisher statement to website | **DONE** |
 | **2026-03–05** | **Finish dam safety + desert solar papers** | **IN PROGRESS** |
